@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.head{
+    display:flex;
+    background-color: aquamarine;
+    /* align-items: center; */
+    justify-content: center;
+}
+.main{
+    display:flex;
+    justify-content: center;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width:660px;
+    height:660px;
+    justify-content: space-between;
+    align-content: space-between;
+    /* margin:0 auto; */
+}
+img{
+    height:210px;
+    width:210px;
+    border-radius: 8px;
+
+}
