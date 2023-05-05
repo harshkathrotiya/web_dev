@@ -2,7 +2,6 @@
     margin:0;
     padding: 0;
 }
-
 .head{
     display:flex;
     background-color: aquamarine;
@@ -17,8 +16,8 @@
     overflow-y: auto;
 }
 .container{
-    display: flex;
-    flex-wrap: wrap;
+    display:flex;
+    flex-wrap:wrap;
     width:660px;
     height:660px;
     justify-content: space-between;
