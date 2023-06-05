@@ -1,3 +1,2 @@
 #web development
-
-this repositery for web development.
+this repositery is for practiced webdevelopment projects.
