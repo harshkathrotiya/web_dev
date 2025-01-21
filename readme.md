@@ -1,2 +1,2 @@
 # web development
-## this repositery is for practiced webdevelopment projects.
+## this repositery is for save the demo web development projects.
