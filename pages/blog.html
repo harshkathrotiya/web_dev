@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Nature World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h2 class="logo">
+            <i class="fas fa-leaf"></i>
+            Nature World
+        </h2>
+        
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav class="navigation">
+            <div class="nav-item">
+                <a href="../index.html">Home</a>
+            </div>
+            
+            <div class="nav-item">
+                <a href="#">Explore</a>
+                <div class="dropdown">
+                    <a href="wildlife.html">Wildlife</a>
+                    <a href="landscapes.html">Landscapes</a>
+                    <a href="adventures.html">Adventures</a>
+                </div>
+            </div>
+            
+            <div class="nav-item">
+                <a href="blog.html" class="active">Blog</a>
+            </div>
+            
+            <div class="nav-item">
+                <a href="#">Gallery</a>
+                <div class="dropdown">
+                    <a href="photo-gallery.html">Photos</a>
+                    <a href="video-gallery.html">Videos</a>
+                </div>
+            </div>
+            
+            <div class="search-container">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="search-box">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="parallax">
+        <h2 class="page-title">Nature Stories</h2>
+        <img src="../images/blog-bg.jpg" class="parallax-img">
+    </section>
+
+    <!-- Blog Categories -->
+    <div class="category-filter">
+        <button class="filter-btn active" data-category="all">All Posts</button>
+        <button class="filter-btn" data-category="wildlife">Wildlife</button>
+        <button class="filter-btn" data-category="adventure">Adventure</button>
+        <button class="filter-btn" data-category="nature">Nature</button>
+        <button class="filter-btn" data-category="photography">Photography</button>
+    </div>
+
+    <!-- Blog Grid -->
+    <section class="blog-container">
+        <div class="blog-grid">
+            <!-- Blog Card 1 -->
+            <div class="blog-card" data-category="wildlife">
+                <div class="blog-image">
+                    <img src="../images/blog/wildlife1.jpg" alt="Wildlife Post">
+                    <span class="blog-tag">Wildlife</span>
+                </div>
+                <div class="blog-content">
+                    <h3>Discovering Wildlife in Natural Habitats</h3>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> March 15, 2024</span>
+                        <span><i class="far fa-user"></i> John Doe</span>
+                    </div>
+                    <p>Explore the fascinating world of wildlife in their natural environments...</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Blog Card 2 -->
+            <div class="blog-card" data-category="adventure">
+                <div class="blog-image">
+                    <img src="../images/blog/adventure1.jpg" alt="Adventure Post">
+                    <span class="blog-tag">Adventure</span>
+                </div>
+                <div class="blog-content">
+                    <h3>Mountain Hiking Adventures</h3>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> March 12, 2024</span>
+                        <span><i class="far fa-user"></i> Jane Smith</span>
+                    </div>
+                    <p>Experience the thrill of mountain hiking and breathtaking views...</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Add more blog cards as needed -->
+        </div>
+
+        <!-- Load More Button -->
+        <div class="load-more">
+            <button class="load-more-btn">Load More Posts</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Your existing footer content -->
+    </footer>
+
+    <script src="../js/blog.js"></script>
+    <script src="../js/common.js"></script>
+</body>
+</html> 

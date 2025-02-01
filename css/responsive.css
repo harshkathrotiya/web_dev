@@ -1,0 +1,229 @@
+/* General Responsive Styles */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 10px 20px;
+    }
+
+    .navigation {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 80%;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        transition: 0.3s ease;
+    }
+
+    .navigation.active {
+        left: 0;
+    }
+
+    /* Home Page */
+    .parallax {
+        height: 100vh;
+    }
+
+    #text {
+        font-size: 3em;
+        right: -100px;
+    }
+
+    .section-container {
+        padding: 20px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .facts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    /* Adventures Section */
+    .adventures-grid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .adventure-preview-card {
+        height: 250px;
+    }
+
+    /* Wildlife Page */
+    .wildlife-card {
+        grid-template-columns: 1fr;
+    }
+
+    .wildlife-card img {
+        height: 200px;
+    }
+
+    .wildlife-info {
+        padding: 15px;
+    }
+
+    /* Conservation Page */
+    .conservation-card {
+        grid-template-columns: 1fr;
+    }
+
+    .conservation-info {
+        padding: 15px;
+    }
+
+    /* Form Elements */
+    .newsletter-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+    }
+
+    /* Modal Adjustments */
+    .modal-content {
+        width: 95%;
+        margin: 20px;
+        padding: 15px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    /* Header */
+    .logo {
+        font-size: 1.5em;
+    }
+
+    /* Home Page */
+    #text {
+        font-size: 2em;
+        right: -50px;
+    }
+
+    .section-title {
+        font-size: 1.8em;
+    }
+
+    /* Gallery */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Adventure Cards */
+    .adventure-preview-card {
+        height: 200px;
+    }
+
+    .adventure-overlay h3 {
+        font-size: 1.2em;
+    }
+
+    /* Forms */
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    input, select, textarea {
+        padding: 8px;
+    }
+}
+
+/* Tablet Devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Grid Layouts */
+    .feature-grid,
+    .adventures-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Cards */
+    .wildlife-card,
+    .conservation-card {
+        grid-template-columns: 300px 1fr;
+    }
+
+    /* Gallery */
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Landscape Mode */
+@media (max-height: 500px) and (orientation: landscape) {
+    .parallax {
+        height: 150vh;
+    }
+
+    .navigation {
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+
+    .adventure-preview-card {
+        height: 180px;
+    }
+}
+
+/* High-DPI Screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .navigation,
+    .dropdown,
+    .search-box {
+        background: #1a1a1a;
+        color: #fff;
+    }
+
+    .navigation a {
+        color: #fff;
+    }
+
+    .navigation a:hover {
+        background: #359381;
+    }
+
+    header.sticky {
+        background: rgba(26, 26, 26, 0.95);
+    }
+}
+
+/* Print Styles */
+@media print {
+    header {
+        position: static;
+    }
+
+    .navigation,
+    .menu-btn,
+    .search-container {
+        display: none;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+} 

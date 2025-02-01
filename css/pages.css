@@ -1,0 +1,389 @@
+.page-hero {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.page-hero .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.page-title {
+    font-size: 4em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+    padding: 80px 100px;
+    background: #fff;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-text h2 {
+    color: #359381;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    line-height: 1.6;
+    color: #333;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    color: #359381;
+    padding: 20px 20px 10px;
+    font-size: 1.5em;
+}
+
+.service-card p {
+    color: #666;
+    padding: 0 20px 20px;
+    line-height: 1.6;
+}
+
+/* Enhanced Service Cards */
+.service-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 20px 20px;
+    color: #359381;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.service-link:hover {
+    color: #246355;
+}
+
+/* Featured Programs Section */
+.featured-programs {
+    background: #f5f5f5;
+    padding: 80px 100px;
+}
+
+.featured-programs h2 {
+    text-align: center;
+    color: #359381;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+}
+
+.program-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+}
+
+.program-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.program-content {
+    padding: 25px;
+}
+
+.program-content h3 {
+    color: #359381;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.program-content p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.program-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.program-content ul li {
+    color: #555;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.program-content ul li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .featured-programs {
+        padding: 40px 20px;
+    }
+    
+    .program-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .program-card img {
+        height: 200px;
+    }
+}
+
+/* Animation Classes */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Loading Animation */
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/* Sticky header styles */
+header.sticky {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Wildlife Page Styles */
+.wildlife-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.wildlife-category {
+    margin-bottom: 40px;
+}
+
+.wildlife-category h3 {
+    color: #359381;
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #359381;
+    padding-bottom: 10px;
+}
+
+/* Horizontal Card Layout */
+.wildlife-category {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wildlife-card {
+    display: grid;
+    grid-template-columns: 400px 1fr; /* Fixed width for image, flexible for content */
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.wildlife-card:hover {
+    transform: translateY(-5px);
+}
+
+.wildlife-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.wildlife-info {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wildlife-info h4 {
+    color: #359381;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.wildlife-info p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .wildlife-card {
+        grid-template-columns: 1fr; /* Stack on mobile */
+    }
+
+    .wildlife-card img {
+        height: 250px;
+    }
+
+    .wildlife-info {
+        padding: 20px;
+    }
+}
+
+/* Landscape Page Styles */
+.landscape-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.landscape-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.landscape-card:hover {
+    transform: translateY(-10px);
+}
+
+.landscape-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.landscape-info {
+    padding: 20px;
+}
+
+.landscape-info h3 {
+    color: #359381;
+    margin-bottom: 10px;
+}
+
+/* Conservation Page Styles */
+.conservation-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.conservation-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.conservation-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conservation-info {
+    padding: 30px;
+}
+
+.conservation-info h3 {
+    color: #359381;
+    margin-bottom: 15px;
+}
+
+.action-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #359381;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.action-btn:hover {
+    background: #246355;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .conservation-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .conservation-card img {
+        height: 200px;
+    }
+} 
